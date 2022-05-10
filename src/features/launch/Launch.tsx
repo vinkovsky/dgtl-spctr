@@ -67,11 +67,9 @@ const Launch: FC = () => {
               <Typography>{new Date(currentLaunch.date_local).toLocaleString()}</Typography>
             </Grid>
             <Grid item xs={12}>
-              <Button variant="outlined">
-                <Link component={RouterLink} to={'/'} underline="none">
-                  👈 Back to Home
-                </Link>
-              </Button>
+              <Link component={RouterLink} to={'/'} underline="none">
+                <Button variant="outlined">👈 Back to Home</Button>
+              </Link>
             </Grid>
           </Grid>
         </Container>
